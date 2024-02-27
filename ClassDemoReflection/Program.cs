@@ -45,6 +45,10 @@ void TryReflection(object obj)
     Console.WriteLine(" After " + obj);
 
 
+    var idprop = t.GetProperty("Id");
+    Console.WriteLine($"Name of property: {idprop.Name} and value is {idprop.GetValue(obj)}");
+
+
 
 
 }
